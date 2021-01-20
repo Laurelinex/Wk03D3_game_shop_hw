@@ -8,5 +8,21 @@
 </head>
 <body>
     
+    <nav>
+        <ul><li><a href="/orders">Home</a></li></ul>
+    </nav>
+
+    <h1>{{ order.customer_name }}'s Order</h1>
+
+    <div class="order-container">
+    
+        <div class="order">
+            <h2>Game titles: feature TBC</h2>
+            <h3>When: {{ order.order_date.strftime("%b %d %Y") }}</h3>
+            <h4>Quantity: {{ order.quantity }}</h4>
+        </div>
+    
+    </div>
+
 </body>
 </html>
