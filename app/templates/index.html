@@ -10,7 +10,7 @@
 <body>
 
     <nav>
-        <ul><li><a href="/orders">Home</a></li></ul>
+        <ul><li class="navLink"><a href="/orders">Home</a></li></ul>
         <!-- link to another local html page -->
     </nav>
 
@@ -21,7 +21,7 @@
         <div class="order">
             <h2>{{ order.customer_name}}</h2>
             <p>bought {{ order.quantity }} games on {{ order.order_date.strftime("%b %d %Y") }}.</p>
-            <a href="/orders/{{orders.index(order)}}">See order details</a>
+            <a class="order_details_link" href="/orders/{{orders.index(order)}}">See order details</a>
         </div>
         {% endfor %}
     </div>

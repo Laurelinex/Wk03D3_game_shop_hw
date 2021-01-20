@@ -30,7 +30,7 @@ Provide the following functionality in the web app:
 
 ## Homework!
 
-A some CSS to your app.
+Add some CSS to your app.
 
 ### Styling
 

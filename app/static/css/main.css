@@ -1,0 +1,39 @@
+body {
+    background-image: url(images/indieshop_bgd.jpg);
+    background-color: rgb(91, 100, 91);
+    font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+a {
+    color: yellowgreen;
+}
+
+h1 {
+    margin: 35px;
+    text-align: center;
+}
+
+/* this removes the dot before home, dkw */
+.navLink {
+    display: inline;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+/* .order p {
+    color: yellowgreen;
+} */
+
+.order_details_link {
+    color: yellowgreen;
+}
+
+.order {
+    text-align: center;
+}

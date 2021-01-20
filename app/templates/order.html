@@ -9,17 +9,19 @@
 <body>
     
     <nav>
-        <ul><li><a href="/orders">Home</a></li></ul>
+        <ul><li class=navLink><a href="/orders">Home</a></li></ul>
     </nav>
 
-    <h1>{{ order.customer_name }}'s Order</h1>
+    <h1 class="order-title">{{ order.customer_name }}'s Order</h1>
 
     <div class="order-container">
     
         <div class="order">
-            <h2>Game titles: feature TBC</h2>
-            <h3>When: {{ order.order_date.strftime("%b %d %Y") }}</h3>
-            <h4>Quantity: {{ order.quantity }}</h4>
+            <!-- <h2>Game titles: feature TBC</h2> -->
+            <h3>{{ order.quantity }} games bought</h3>
+            <h4>on {{ order.order_date.strftime("%b %d %Y") }}</h3>
+
+            <h5>Games: feature TBC</h5>
         </div>
     
     </div>
