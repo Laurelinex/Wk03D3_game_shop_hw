@@ -1,0 +1,2 @@
+FLASK_APP=indiegameshop.py
+FLASK_ENV=development
