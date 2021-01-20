@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - Name Placeholder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>{{ title }} - Orders</title>
 </head>
+
 <body>
-    <h1>Our orders:</h1>
-    {% for order in orders %}
-    <div>
-        <p>
-            - <b>{{ order.customer_name}}</b> bought {{ order.quantity }} games(s) on {{ order.order_date }}.
-            <p><a href="/order.html">Order details</a></p>
-        </p>
+
+    <nav>
+        <ul><li><a href="/orders">Home</a></li></ul>
+        <!-- link to another local html page -->
+    </nav>
+
+    <h1>All Orders Ever</h1>
+
+    <div class="order-container">
+        {% for order in orders %}
+        <div class="order">
+            <h2>{{ order.customer_name}}</h2>
+            <p>bought {{ order.quantity }} games on {{ order.order_date.strftime("%b %d %Y") }}.</p>
+            <a href="/orders/{{orders.index(order)}}">See order details</a>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
+    
 </body>
 </html>
